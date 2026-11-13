@@ -931,7 +931,7 @@ Macro.add('tvDemo', {
 
 /* Инициализация инвентаря и предметов */
 &lt;&lt;set $money to 0&gt;&gt;         /* Наличные деньги в кошельке/при себе */
-&lt;&lt;set $home_money to 5000&gt;&gt; /* Заначка/деньги дома в тайнике */
+&lt;&lt;set $home_money to 200&gt;&gt; /* Заначка/деньги дома в тайнике */
 &lt;&lt;set $has_wallet to false&gt;&gt;
 &lt;&lt;set $has_pass to false&gt;&gt;
 &lt;&lt;set $has_vip_pass to false&gt;&gt;
@@ -1597,7 +1597,7 @@ Macro.add('tvDemo', {
 
 — Я продолжу... Также вы были уличены в помощи другим преступникам, что квалифицируется как организованная преступность.&lt;br&gt;&lt;br&gt;
 
-— Тебе меня не запугать, чистюля! Иди почисти сапоги, а то уже запачкались! И не таких видел. Ха-ха!&lt;br&gt;&lt;br&gt;
+— Тебе меня не запугать, чистюля! Иди почисти сапоги, а то уже запачкались! И не таких видел!&lt;br&gt;&lt;br&gt;
 
 //Валерия хладнокровно зачитывает законы, не обращая ни малейшего внимания на ужимки сопляка.//&lt;br&gt;&lt;br&gt;
 
@@ -1619,9 +1619,7 @@ Macro.add('tvDemo', {
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="prol_sc02_boypay" tags="" position="3750,1475" size="100,100">&lt;&lt;nobr&gt;&gt;
 — И продержать за решёткой долгое время, пока выясняю обстоятельства. За это время, может, что и накопаю.&lt;br&gt;&lt;br&gt;
 
-— Может, накопаешь, а может, и нет! Что, я в вашей каталажке впервые, что ли? Тоже мне, напугал! Меня там и так все знают.&lt;br&gt;&lt;br&gt;
-
-— Просто так я тебе ничего не расскажу!&lt;br&gt;&lt;br&gt;
+— Может, накопаешь, а может, и нет! Что, я в вашей каталажке впервые, что ли? Тоже мне, напугал! Меня там и так все знают. Просто так я тебе ничего не расскажу!&lt;br&gt;&lt;br&gt;
 
 [[Сколько ты хочешь?|prol_sc02_check_money]]
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="38" name="prol_sc02_check_money" tags="" position="3825,1600" size="100,100">&lt;&lt;nobr&gt;&gt;
@@ -2756,8 +2754,8 @@ Macro.add('tvDemo', {
 
 [[Зеленоглазая блондинка в бирюзовом платье и с татуировкой змеи на лопатке|prol_sc06_bar_guest_kassandra]]&lt;br&gt;
 [[Голубоглазая шатенка в красном платье, с яркой заколкой в волосах и золотыми кольцами на мизинцах|prol_sc06_bar_guest_kressida]]&lt;br&gt;
-[[Голубоглазая блондинка в красном платье и с длинными чёрными ногтями с абстрактным золотым рисунком|prol_sc06_bar_guest_velina]]
-[[Слишком сложно! Идём напролом|prol_sc06_bar_order]]
+[[Голубоглазая блондинка в красном платье и с длинными чёрными ногтями с абстрактным золотым рисунком|prol_sc06_bar_guest_velina]]&lt;br&gt;
+[[Слишком сложно! Идём напролом|prol_sc06_bar_order]]&lt;br&gt;
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="99" name="prol_sc06_bar_secur_conflict" tags="" position="3725,5275" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;set $stats.composure = Math.max(0, $stats.composure - 1)&gt;&gt;
 
@@ -3568,7 +3566,7 @@ Macro.add('tvDemo', {
 &lt;&lt;else&gt;&gt;
 	//А санкции у меня нет, нужно было подумать, прежде чем махать жетоном.//&lt;br&gt;&lt;br&gt;
 &lt;&lt;/if&gt;&gt;
-[[Не показать Санкцию|prol_sc06_bar_noorder]]
+[[Сменить тему|prol_sc06_bar_noorder]]
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="151" name="prol_sc06_bar_entry_check_trust" tags="" position="2775,5075" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;style&gt;
   .vox-dataslate {
@@ -5498,6 +5496,8 @@ Macro.add('tvDemo', {
 
 — Витус? Господин следователь! У меня есть для вас информация...&lt;br&gt;&lt;br&gt;
 
+//Знакомый голос, она что следит за мной?//&lt;br&gt;&lt;br&gt;
+
 — Дайте угадаю, опять кракеры?&lt;br&gt;&lt;br&gt;
 
 — Соседи подо мной копошатся в потолке, это снова кракеры хотят пробраться ко мне.&lt;br&gt;&lt;br&gt;
@@ -5526,7 +5526,9 @@ Macro.add('tvDemo', {
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="242" name="prol_sc05_Alastor_cnock2" tags="" position="3175,3125" size="100,100">&lt;&lt;nobr&gt;&gt;
 //Слышу натужно тяжёлые шаги за дверью.//&lt;br&gt;&lt;br&gt;
 
-— Кто там такой настойчивый? Давно не получал по морде?&lt;br&gt;&lt;br&gt;
+— Кто там такой настойчивый? Свали, если не хочешь проблем!&lt;br&gt;&lt;br&gt;
+
+//Проныра ещё не знает с кем связался.//&lt;br&gt;&lt;br&gt;
 
 — Ну давай, покажи, насколько ты серьёзен.&lt;br&gt;&lt;br&gt;
 
